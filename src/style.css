@@ -607,6 +607,9 @@ form {
 .footer-content > ul > li > a:hover {
     text-shadow: 0px 0px 4px rgb(0, 0, 0);
 }
+.social-site-links {
+    display: none;
+}
 .footer-text {
     font-size: 18px;
     letter-spacing: 4px;
@@ -946,6 +949,9 @@ form {
     nav.active {
         top: 0;
     }
+    .right-side-block {
+        display: none;
+    } 
     h1 {
         font-size: 52px;
         font-weight: 700;
@@ -955,15 +961,6 @@ form {
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 20px;
-    }
-    .right-side-block {
-        position: absolute;
-        top: 400px;
-        right: -225px;
-        padding: 0px 0px;
-    }
-    .right-side-block > ul > li > a {
-        font-size: 16px;
     }
     .about-us-content {
         display: flex;
@@ -997,13 +994,19 @@ form {
         max-height: 500px;
         overflow: auto;
     }
-    .about-us-text-block::-webkit-scrollbar {
+    /*.about-us-text-block::-webkit-scrollbar {
         width: 4px;
-        border-radius: 4px;
+        border-radius: 1px;
     }
     .about-us-text-block::-webkit-scrollbar-thumb {
         width: 4px;
         border-radius: 4px ;
+    } */
+    .about-us-text-block::-webkit-scrollbar {
+        display: none;
+    }
+    .about-us-text-block::-webkit-scrollbar-thumb {
+        display: none;
     }
     .about-us-content-right {
         max-width: 100%;
@@ -1155,13 +1158,19 @@ form {
         max-height: 600px;
         overflow: auto;
     }
-    .travel-next-tour-text-block::-webkit-scrollbar {
+    /*.travel-next-tour-text-block::-webkit-scrollbar {
         width: 4px;
         border-radius: 4px ;
     }
     .travel-next-tour-text-block::-webkit-scrollbar-thumb {
         width: 4px;
         border-radius: 4px ;
+    } */
+    .travel-next-tour-text-block::-webkit-scrollbar {
+        display: none;
+    }
+    .travel-next-tour-text-block::-webkit-scrollbar-thumb {
+        display: none;
     }
     .form-content {
         display: flex;
@@ -1204,6 +1213,30 @@ form {
     .footer-content > ul > li > a {
         font-size: 16px;
         letter-spacing: 1px;
+    }
+    .social-site-links {
+        width: 100%; 
+        display: flex;
+    }
+    .social-site-links > ul {
+        width: 100%; 
+        display: flex;
+        justify-content: space-between;
+        /*border: 1px solid orange;*/
+        margin-bottom: 50px;
+    }
+    .social-site-links > ul > li {
+        list-style-type: none;
+    }
+    .social-site-links > ul > li > a {
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: black;
+        text-transform: uppercase;
+    }
+    .social-site-links > ul > li > a:hover {
+        text-shadow: 0px 0px 4px rgb(0, 0, 0);
     }
     .footer-text {
         font-size: 16px;
