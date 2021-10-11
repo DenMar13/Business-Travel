@@ -14,32 +14,27 @@ header {
     max-width: 1400px;
     height: 100%; 
     margin: 0 auto; 
-    /* border: 1px solid red; */
 }
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 280px 0px 280px;
-    /* border: 1px solid orange; */
 }
 .header-top {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid blue; */
 }
 nav {
     display: flex;
     justify-content: center; 
     padding: 40px 0px;
-    /* border: 1px solid yellow; */
 }
 nav > ul {
     width: 520px;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid yellow; */
 }
 nav > ul > li {
     list-style-type: none;
@@ -50,7 +45,6 @@ nav > ul > li > a {
     letter-spacing: 4px;
     color: rgba(228, 228, 228, 0.72);
     transition: 0.3s ease-in;
-    /*scroll-behavior: smooth; */
 }
 nav > ul > li > a:hover {
     color: rgb(255, 255, 255);
@@ -129,7 +123,6 @@ h1 {
     transform: rotate(90deg); 
     display: flex;
     justify-content: center;
-    /* border: 1px solid orange; */
 }
 .right-side-block > ul {
     width: 480px;
@@ -150,10 +143,6 @@ h1 {
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 4px rgb(255, 255, 255);
 }
-.button-return {
-    position: absolute;
-    top: 50%; left: 50%;
-}
 .about-us-content {
     display: flex;
     justify-content: space-between;
@@ -167,7 +156,6 @@ h1 {
     max-width: 700px;
     padding-right: 20px;
     color:rgb(0, 0, 0);
-    /*border: 1px solid orange; */
 }
 .about-us-subheader {
     font-size: 22px;
@@ -268,7 +256,6 @@ h1 {
 }
 .about-us-content-right {
     max-width: 500px;
-    /* border: 1px solid orange; */
 }
 .about-us-content-right img {
     max-width: 500px;
@@ -352,7 +339,6 @@ h1 {
     object-position: center; 
     opacity: 90%;
     transition: 520ms ease-out;
-    /* border: 1px solid rgb(52, 255, 0); */
 } 
 .galleri-grid img:hover {
     opacity: 100%;
@@ -374,7 +360,6 @@ h1 {
     margin: 0px 13px;
 }
 .galleri-slider a:hover {
-    /*color: rgb(72, 72, 72); */
     filter: invert(50%);
 }
 .splash {
@@ -383,11 +368,7 @@ h1 {
     color: silver;
 }
 #active-slide {
-    /*color: rgb(72, 72, 72); */
     filter: invert(50%);
-}
-.travel {
-    color: black;
 }
 .travel-header {
     display: flex;
@@ -417,7 +398,6 @@ h1 {
     display: flex;
     flex-direction: column;
     max-width: 690px;
-    /*border: 1px solid orange; */
     margin-bottom: 70px;
 }
 .travel-left-content {
@@ -469,7 +449,6 @@ h1 {
 .travel-next-tour-content-left {
     max-width: 540px;
     padding-right: 20px;
-    /* border: 1px solid orange; */
 }
 .travel-next-tour-content-left img {
     max-width: 100%;
@@ -477,7 +456,6 @@ h1 {
 }
 .travel-next-tour-content-right {
     max-width: 700px;
-    /* border: 1px solid orangered; */
     color: black;
 }
 .travel-next-tour-subheader {
@@ -531,7 +509,6 @@ h1 {
     padding: 100px 0px;
 }
 .form-content-left {
-    /*border: 1px solid orange; */
     padding-left: 40px;
 }
 .form-content-left h2 {
@@ -549,7 +526,6 @@ h1 {
 }
 form {
     display: flex;
-    /* border: 1px solid orange; */
     width: 700px; 
     justify-content: space-between;
     align-items: center;
@@ -591,7 +567,6 @@ form {
     width: 560px; 
     display: flex;
     justify-content: space-between;
-    /*border: 1px solid orange;*/
     margin-bottom: 50px;
 }
 .footer-content > ul > li {
@@ -862,7 +837,7 @@ form {
         font-size: 16px;
     }
 }
-@media (max-width: 767px)  { 
+@media (max-width: 767px)  /* Смартфоны */ { 
     .wrapper {
         max-width: 320px;
     }
@@ -896,12 +871,10 @@ form {
         display: flex;
         justify-content: flex-end; 
         align-items: center;
-        /* border: 1px solid blue; */
     }
     .header-burger {
         display: block;
         position: relative;
-        /* border: 1px solid red; */
         width: 40px;
         height: 30px;
         margin: 20px 5px;
@@ -994,20 +967,14 @@ form {
         max-height: 500px;
         overflow: auto;
     }
-    /*.about-us-text-block::-webkit-scrollbar {
+    .about-us-text-block::-webkit-scrollbar {
         width: 4px;
         border-radius: 1px;
     }
     .about-us-text-block::-webkit-scrollbar-thumb {
         width: 4px;
         border-radius: 4px ;
-    } */
-    .about-us-text-block::-webkit-scrollbar {
-        display: none;
-    }
-    .about-us-text-block::-webkit-scrollbar-thumb {
-        display: none;
-    }
+    } 
     .about-us-content-right {
         max-width: 100%;
     }
@@ -1158,20 +1125,14 @@ form {
         max-height: 600px;
         overflow: auto;
     }
-    /*.travel-next-tour-text-block::-webkit-scrollbar {
-        width: 4px;
-        border-radius: 4px ;
-    }
-    .travel-next-tour-text-block::-webkit-scrollbar-thumb {
-        width: 4px;
-        border-radius: 4px ;
-    } */
     .travel-next-tour-text-block::-webkit-scrollbar {
-        display: none;
+        width: 4px;
+        border-radius: 4px ;
     }
     .travel-next-tour-text-block::-webkit-scrollbar-thumb {
-        display: none;
-    }
+        width: 4px;
+        border-radius: 4px ;
+    } 
     .form-content {
         display: flex;
         flex-direction: column;
@@ -1222,7 +1183,6 @@ form {
         width: 100%; 
         display: flex;
         justify-content: space-between;
-        /*border: 1px solid orange;*/
         margin-bottom: 50px;
     }
     .social-site-links > ul > li {
@@ -1245,6 +1205,3 @@ form {
         margin-bottom: 0px;
     }
 }
-
-
-
